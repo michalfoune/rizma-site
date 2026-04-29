@@ -129,7 +129,7 @@
       .screenshot-frame .placeholder {
         position: absolute;
         inset: 0;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -243,7 +243,7 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-logo">
-        <img src="/images/brief-icon.png" alt="Rizma Brief icon" onerror="this.style.display='none'" />
+        <img src="/images/brief-icon.png" alt="Rizma Brief icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
         <h1>Rizma Brief</h1>
       </div>
       <p class="hero-tagline">Stay informed without emotional overload.</p>
@@ -255,7 +255,7 @@
 
         <div class="screenshot-item">
           <div class="screenshot-frame">
-            <img src="/images/rb-1-home.jpeg" alt="Rizma Brief home screen" onerror="this.style.display='none'" />
+            <img src="/images/rb-1-home.jpeg" alt="Rizma Brief home screen" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
             <div class="placeholder">
               <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.5"/></svg>
               brief-1-home.png
@@ -266,7 +266,7 @@
 
         <div class="screenshot-item">
           <div class="screenshot-frame">
-            <img src="/images/rb-2-fup.jpg" alt="Rizma Brief follow-up chat" onerror="this.style.display='none'" />
+            <img src="/images/rb-2-fup.jpg" alt="Rizma Brief follow-up chat" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
             <div class="placeholder">
               <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.5"/></svg>
               brief-2-chat.png
@@ -277,7 +277,7 @@
 
         <div class="screenshot-item">
           <div class="screenshot-frame">
-            <img src="/images/rb-4-settings.jpg" alt="Rizma Brief preferences" onerror="this.style.display='none'" />
+            <img src="/images/rb-4-settings.jpg" alt="Rizma Brief preferences" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
             <div class="placeholder">
               <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.5"/></svg>
               brief-3-settings.png
