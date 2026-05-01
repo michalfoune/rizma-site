@@ -16,16 +16,46 @@
         padding: 0 24px;
         line-height: 1.5;
       }
-      h1 { font-size: 42px; margin-bottom: 12px; }
+      .heading {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 12px;
+      }
+      .heading img {
+        width: 52px;
+        height: 52px;
+      }
+      h1 { font-size: 42px; margin: 0; }
       p { font-size: 20px; color: #444; }
       a { color: inherit; }
+      .brief-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #6B47FF;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .brief-link img {
+        width: 22px;
+        height: 22px;
+      }
     </style>
   </head>
   <body>
-    <h1>Rizma AI</h1>
+    <div class="heading">
+      <img src="/images/rizma-icon-orange.png" alt="Rizma AI" />
+      <h1>Rizma AI</h1>
+    </div>
     <p>A calmer way to stay informed.</p>
     <p>Building products that help people stay informed without feeling overwhelmed.</p>
-    <p><a href="/brief.html" style="color: #6B47FF; font-weight: 600;">Rizma Brief →</a></p>
+    <p>
+      <a class="brief-link" href="/brief">
+        <img src="/apple-touch-icon.png" alt="Rizma Brief" />
+        Rizma Brief →
+      </a>
+    </p>
     <p>Contact: <a href="mailto:michal@rizma.ai">michal@rizma.ai</a></p>
   </body>
 </html>
