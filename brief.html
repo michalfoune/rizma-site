@@ -205,10 +205,30 @@
       }
 
       .feature-icon {
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: 0.08em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        height: 20px;
+      }
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        display: inline-block;
+        flex-shrink: 0;
+      }
+
+      .dot-outline {
+        background: transparent;
+        border: 1.5px solid #BBBAC0;
+      }
+
+      .dot-arrow {
+        font-size: 14px;
         color: #BBBAC0;
+        line-height: 1;
       }
 
       .feature h3 {
@@ -300,17 +320,25 @@
     <section class="features">
       <div class="features-inner">
         <div class="feature">
-          <span class="feature-icon">01</span>
+          <span class="feature-icon">
+            <span class="dot" style="background:#6B47FF"></span>
+            <span class="dot" style="background:#52B788"></span>
+            <span class="dot" style="background:#F97316"></span>
+          </span>
           <h3>Your Tone</h3>
           <p>Calm, Balanced, or Brave — you set the mood.</p>
         </div>
         <div class="feature">
-          <span class="feature-icon">02</span>
+          <span class="feature-icon">
+            <span class="dot dot-outline"></span>
+          </span>
           <h3>No Outrage</h3>
           <p>News filtered to inform, not provoke.</p>
         </div>
         <div class="feature">
-          <span class="feature-icon">03</span>
+          <span class="feature-icon">
+            <span class="dot-arrow">→</span>
+          </span>
           <h3>Go Deeper</h3>
           <p>Ask follow-up questions on any story, instantly.</p>
         </div>
