@@ -36,20 +36,9 @@
       .contact { font-size: 14px; color: #888; }
       .brief-link {
         display: inline-flex;
-        flex-direction: column;
-        gap: 2px;
+        align-items: center;
+        gap: 8px;
         text-decoration: none;
-      }
-      .brief-link-top {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
-      .brief-link-bottom {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding-left: 30px;
       }
       .brief-link-name {
         font-family: 'Playfair Display', serif;
@@ -80,7 +69,6 @@
         .brief-link-name { font-size: 16px; }
         .brief-link-sub { font-size: 16px; }
         .brief-link img { width: 18px; height: 18px; }
-        .brief-link-bottom { padding-left: 26px; }
       }
     </style>
   </head>
@@ -92,14 +80,10 @@
     <p class="tagline">Building products for a calmer, more empathetic world.</p>
     <p>
       <a class="brief-link" href="/brief">
-        <span class="brief-link-top">
-          <img src="/icons/rizma-brief/apple-touch-icon.png" alt="Rizma Brief" />
-          <span class="brief-link-name">Rizma Brief</span>
-        </span>
-        <span class="brief-link-bottom">
-          <span class="brief-link-sub">— a calmer way to stay informed.</span>
-          <span class="brief-link-arrow">→</span>
-        </span>
+        <img src="/icons/rizma-brief/apple-touch-icon.png" alt="Rizma Brief" />
+        <span class="brief-link-name">Rizma Brief</span>
+        <span class="brief-link-sub">— a calmer way to stay informed.</span>
+        <span class="brief-link-arrow">→</span>
       </a>
     </p>
     <p class="contact"><a href="mailto:michal@rizma.ai">michal@rizma.ai</a></p>
