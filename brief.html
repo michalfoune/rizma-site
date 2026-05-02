@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/rizma-brief/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;1,400&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
     <meta name="description" content="Rizma Brief delivers calm, clear news briefings powered by AI. Stay informed without emotional overload." />
     <style>
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -245,6 +245,43 @@
         line-height: 1.55;
       }
 
+      /* ── Story ── */
+      .story {
+        max-width: 660px;
+        margin: 0 auto;
+        padding: 0 24px 80px;
+      }
+
+      .story p {
+        font-family: 'Newsreader', serif;
+        font-size: 18px;
+        line-height: 1.75;
+        color: #444;
+        margin-bottom: 24px;
+      }
+
+      .story blockquote {
+        font-family: 'Newsreader', serif;
+        font-style: italic;
+        font-size: 20px;
+        line-height: 1.65;
+        color: var(--text);
+        border-left: 3px solid var(--purple);
+        margin: 36px 0;
+        padding: 4px 0 4px 24px;
+      }
+
+      .story .pull-quote {
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.3;
+        color: var(--text);
+        text-align: center;
+        margin: 48px auto;
+        max-width: 480px;
+      }
+
       /* ── Footer ── */
       footer {
         text-align: center;
@@ -268,6 +305,27 @@
         <h1>Rizma Brief</h1>
       </div>
       <p class="hero-tagline">Stay informed without emotional overload.</p>
+    </section>
+
+    <!-- Story -->
+    <section class="story">
+      <p>Rizma Brief started with a repeated request from people close to me:</p>
+
+      <blockquote>"I want to stay informed, but I don't want the news to overwhelm me."</blockquote>
+
+      <p>They weren't asking for another general chatbot. They weren't asking for a faster news feed, more headlines, or another place to doomscroll.</p>
+
+      <p>They wanted something more specific: a calmer, dedicated way to understand what is happening in the world without being pulled into emotional overload.</p>
+
+      <p>That request kept coming back, especially from Highly Sensitive People (HSPs), who can experience news and information with greater emotional intensity. Rizma Brief is being designed with those needs in mind and tested with HSPs during early development.</p>
+
+      <p>The result is an early prototype of Rizma Brief — an on-demand news service for people who want to stay informed without feeling overwhelmed.</p>
+
+      <p>The core idea is simple:</p>
+
+      <p class="pull-quote">Same facts, different intensity.</p>
+
+      <p>You choose how you want the news to feel in that moment — Calm, Balanced, or Brave.</p>
     </section>
 
     <!-- Screenshots -->
