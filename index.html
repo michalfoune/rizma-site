@@ -32,20 +32,36 @@
       h1 { font-size: 42px; margin: 0; }
       p { font-size: 20px; color: #444; }
       .tagline { font-size: 26px; }
-      .sub { font-size: 20px; }
       a { color: inherit; }
       .contact { font-size: 14px; color: #888; }
       .brief-link {
         display: inline-flex;
+        flex-direction: column;
+        gap: 2px;
+        text-decoration: none;
+      }
+      .brief-link-top {
+        display: flex;
         align-items: center;
         gap: 8px;
-        text-decoration: none;
+      }
+      .brief-link-bottom {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding-left: 30px;
       }
       .brief-link-name {
         font-family: 'Playfair Display', serif;
         font-weight: 600;
         font-size: 20px;
         color: #1A1A1A;
+      }
+      .brief-link-sub {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: #444;
       }
       .brief-link-arrow {
         color: #6B47FF;
@@ -54,6 +70,17 @@
       .brief-link img {
         width: 22px;
         height: 22px;
+      }
+
+      @media (max-width: 600px) {
+        body { margin: 48px auto; }
+        .heading img { width: 40px; height: 40px; }
+        h1 { font-size: 30px; }
+        .tagline { font-size: 18px; }
+        .brief-link-name { font-size: 16px; }
+        .brief-link-sub { font-size: 16px; }
+        .brief-link img { width: 18px; height: 18px; }
+        .brief-link-bottom { padding-left: 26px; }
       }
     </style>
   </head>
@@ -65,9 +92,14 @@
     <p class="tagline">Building products for a calmer, more empathetic world.</p>
     <p>
       <a class="brief-link" href="/brief">
-        <img src="/icons/rizma-brief/apple-touch-icon.png" alt="Rizma Brief" />
-        <span class="brief-link-name">Rizma Brief <span style="font-weight: 400;">— a calmer way to stay informed.</span></span>
-        <span class="brief-link-arrow">→</span>
+        <span class="brief-link-top">
+          <img src="/icons/rizma-brief/apple-touch-icon.png" alt="Rizma Brief" />
+          <span class="brief-link-name">Rizma Brief</span>
+        </span>
+        <span class="brief-link-bottom">
+          <span class="brief-link-sub">— a calmer way to stay informed.</span>
+          <span class="brief-link-arrow">→</span>
+        </span>
       </a>
     </p>
     <p class="contact"><a href="mailto:michal@rizma.ai">michal@rizma.ai</a></p>
